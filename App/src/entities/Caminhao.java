@@ -8,9 +8,11 @@ public class Caminhao extends Veiculo {
         this.capacidadeCarga = capacidadeCarga;
     }
 
-    public void mostrarDados(boolean mostrarCapacidadeCarga) {
+    public void mostrarDados(boolean mostrarCapacidadeCargaT) {
         super.mostrarDados();
-        if (mostrarCapacidadeCarga){
+        if (mostrarCapacidadeCargaT){
+            System.out.printf("\nCapacidade de carga: %.2f t", capacidadeCarga/1000);
+        } else {
             System.out.printf("\nCapacidade de carga: %.2f kg", capacidadeCarga);
         }
     }

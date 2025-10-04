@@ -11,7 +11,7 @@ public class Moto extends Veiculo {
     public void mostrarDados(boolean mostrarCilindradas) {
         super.mostrarDados();
         if (mostrarCilindradas){
-            System.out.printf("\nCilindradas: %d", cilindradas);
+            System.out.printf("\nCilindradas: %d cc", cilindradas);
         }
     }
 }
